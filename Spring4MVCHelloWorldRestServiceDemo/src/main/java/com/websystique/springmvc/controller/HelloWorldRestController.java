@@ -1,6 +1,7 @@
 package com.websystique.springmvc.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
+
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -13,7 +14,7 @@ public class HelloWorldRestController {
 
 	@GetMapping("home")
 	public String welcome() {//Welcome page, non-rest
-		return "Welcome to RestTemplate Example.";
+		return "Welcome to RestTemplate Example."; 
 	}
 
 	@GetMapping(path={"/hello/{player}"},produces = {"application/xml","application/json"} )
